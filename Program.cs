@@ -31,11 +31,7 @@ namespace files_module
 
         static double CalculateSalesTotal(IEnumerable<string> salesFiles)
         {
-            return salesFiles.Aggregate(0.0, (acc, file) =>{
-                var fileInfo = File.ReadAllText(file);
-                var fileObj = JsonConvert.DeserializeObject<SalesData>(fileInfo);
-                return acc + fileObj.Total;
-            });
+            return salesFiles.Aggregate(0.0, (acc, file) => acc + JsonConvert.DeserializeObject<SalesData>(File.ReadAllText(file)).Total);
         }
 
         class SalesData
