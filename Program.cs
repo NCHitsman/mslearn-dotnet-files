@@ -16,12 +16,6 @@ namespace files_module
                 Console.WriteLine(file);
             }
 
-            string fileName = $"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales{Path.DirectorySeparatorChar}sales.json";
-
-            FileInfo info = new FileInfo(fileName);
-
-            Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}");
-
         }
 
         static IEnumerable<string> FindFiles(string folderName)
