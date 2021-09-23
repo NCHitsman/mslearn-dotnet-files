@@ -26,7 +26,7 @@ namespace files_module
         static IEnumerable<string> FindFiles(string folderName)
         {
             List<string> salesFiles = new List<string>();
-            var foundFiles = Directory.EnumerateFiles(folderName, "*.jsoon", SearchOption.AllDirectories);
+            var foundFiles = Directory.EnumerateFiles(folderName, "*.json", SearchOption.AllDirectories);
             foreach (var file in foundFiles)
             {
                 salesFiles.Add(file);
