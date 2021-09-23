@@ -1,0 +1,9 @@
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/sales.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/204/salestotals.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/204/sales.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/201/salestotals.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/201/sales.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/202/salestotals.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/202/sales.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/203/salestotals.json
+/home/hitsman/personal/proj/mslearn-dotnet-files/stores/203/sales.json
