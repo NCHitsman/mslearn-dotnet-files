@@ -24,15 +24,9 @@ namespace files_module
 
         }
 
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            return Directory.EnumerateFiles(folderName, "*.json", SearchOption.AllDirectories).ToList();
-        }
+        static IEnumerable<string> FindFiles(string folderName) => Directory.EnumerateFiles(folderName, "*.json", SearchOption.AllDirectories);
 
-        static double CalculateSalesTotal(IEnumerable<string> salesFiles)
-        {
-            return salesFiles.Aggregate(0.0, (acc, file) => acc + JsonConvert.DeserializeObject<SalesData>(File.ReadAllText(file)).Total);
-        }
+        static double CalculateSalesTotal(IEnumerable<string> salesFiles) => salesFiles.Aggregate(0.0, (acc, file) => acc + JsonConvert.DeserializeObject<SalesData>(File.ReadAllText(file)).Total);
 
         class SalesData
         {
